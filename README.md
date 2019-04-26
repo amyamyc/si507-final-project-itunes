@@ -14,7 +14,9 @@ This project utilizes the itunes API. Through the API, the project extracts seve
 1. First, you should install all requirements by locating project folder and typing in `pip install -r requirements.txt` in the terminal.
 2. Second, you should run the file by typing "python app.py runserver" into terminal. After this, the terminal should populate with a link ending in the numbers "5000"
 3. In order to see the user interface, paste this link into your web browser.
-4. Please note: Alternatively, if installing the requirements causes package errors in the terminal which causes the local host link to be broken, you can utilize the virtual environment provided in repository. Please activate the virtual environment called "project1env" and type in "python app.py runserver".
+4. If after installing the requirements.txt, you see an error "No module named 'flask_sqlalchemy'" in the terminal, please type in "source project1-env/bin/activate" to activate a virtual environment.
+5. The terminal should show you (project1-env) $  after step 4.
+6. Please type in "python app.py runserver" into terminal to run the file. 
 
 ## How to use
 1. User can input one of these three music genres into the Route 3 (See below in Routes section). Genres that can be inputted are "Pop", "Country", "Hip-Hop". Please include capitalization as shown when inputting the genre in the route.
