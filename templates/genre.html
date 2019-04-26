@@ -1,0 +1,24 @@
+
+<style>
+  ul {color:red; font-family: Arial, Helvetica, sans-serif; list-style-type: none;};
+  </style>
+<ul>
+{% for sg in songs_list %}
+<li>{{ sg }}</li><br>
+<!-- <li>{{ sg[0] }} by {{ sg[1] }} {{ sg[2] }}</li><br> -->
+{% endfor %}
+</ul>
+
+<p>
+  	The number of list items for this page: <span id = "items"></span><br/>
+  </p>
+
+<!-- {% if not all_movies %}
+There are no saved favorite movies to show.
+{% endif %} -->
+
+<script type="text/javascript">
+  document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length
+  </script>
+
+<a href="{{ url_for('index')}}">Return to home page</a>

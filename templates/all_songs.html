@@ -1,0 +1,19 @@
+<style>
+  ul {color:red; font-family: Arial, Helvetica, sans-serif; list-style-type: none;};
+  </style>
+<ul>
+{% for sg in all_songs %}
+<li>{{ sg[0] }} by {{ sg[1] }} {{ sg[2] }}</li><br>
+{% endfor %}
+</ul>
+
+<!-- {% if not all_movies %}
+There are no saved favorite movies to show.
+{% endif %} -->
+
+<a href="{{ url_for('index')}}">Return to home page</a><br>
+
+
+<a href="{{ url_for('search_genre', genre='Pop')}}"> See all the Pop Songs </a><br>
+<a href="{{ url_for('search_genre', genre='Country')}}"> See all the Country Songs </a><br>
+<a href="{{ url_for('search_genre', genre='Hip-Hop')}}"> See all the Hip Hop Songs </a><br>
